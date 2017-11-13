@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def get_random_eraser(p=0.5, s_l=0.02, s_h=0.4, r_1=0.3, r_2=1/0.3, v_l=0, v_h=255):
+def get_random_eraser(p=0.5, s_l=0.02, s_h=0.4, r_1=0.3, r_2=1 / 0.3, v_l=0, v_h=255):
     def eraser(input_img):
         img_h, img_w, _ = input_img.shape
         p_1 = np.random.rand()
